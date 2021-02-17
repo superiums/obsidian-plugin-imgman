@@ -30,9 +30,9 @@ export default class MyPlugin extends Plugin {
 
 		this.addSettingTab(new SampleSettingTab(this.app, this));
 
-		this.registerEvent(this.app.on('codemirror', (cm: CodeMirror.Editor) => {
-			console.log('codemirror', cm);
-		}));
+		// this.registerEvent(this.app.on('codemirror', (cm: CodeMirror.Editor) => {
+		// 	console.log('codemirror', cm);
+		// }));
 
 		this.registerDomEvent(document, 'click', (evt: MouseEvent) => {
 			console.log('click', evt);
